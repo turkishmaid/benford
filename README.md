@@ -1,7 +1,7 @@
 # benford
 Fool around with digit statistics.
 
-## Resources
+## trigger
 - https://core.ac.uk/download/pdf/206427437.pdf
 - via [tweet by chaoaretasty](https://twitter.com/chaoaretasty/status/1325088962587865089?s=21)
 - replying to [tweet by yodatelefant](https://twitter.com/yodatelefant/status/1324838425170595840?s=21)
@@ -15,3 +15,11 @@ chaoaretasty (@Chao Pup - watch the Sonic film - #SavedTheExpanse):
 https://core.ac.uk/download/pdf/206427437.pdf
 
 (Links in tweets slightly fitted to the purpose, but keeping verbatim text.)
+
+## pygame
+
+- (not finding my main resource now...)
+- https://coderslegacy.com/python/python-pygame-tutorial/
+- https://pygame.readthedocs.io/en/latest/4_text/text.html -> fonts or not?
+- https://realpython.com/pygame-a-primer/
+- https://ukdevguy.com/pygame-tutorial-in-python-3/
