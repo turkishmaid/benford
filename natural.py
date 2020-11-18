@@ -2,9 +2,12 @@
 # coding: utf-8
 
 """
-EXPLAIN_WHAT_THIS_IS_ALL_ABOUT_PLEASE
+Simple program to iterate thru the natural numbers, fetch some digit from the
+decimal representation and plot the distribution of the different values as
+an animated graph.
 """
 # Created: 17.11.20
+
 
 import pygame
 import sys
