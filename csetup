@@ -1,0 +1,55 @@
+#!/bin/bash
+# DONE: conda update -n base -c defaults conda
+
+# Don't forget to maintain cenv.yml appropriately.
+# Then run
+#    . csetup
+
+
+# must be dot sourced
+if [ "$0" = "$BASH_SOURCE" ]; then
+  # subshell
+  echo
+  echo " \\   /  ERROR +++ dot source me +++"
+  echo "  \\ /   I cannot"
+  echo "   X        conda deactivate"
+  echo "  / \\       conda activate"
+  echo " /   \\  for you from a subshell."
+  echo
+  exit 1
+fi
+
+xecho() {
+  echo
+  echo
+  echo
+  echo "––– $1 –––"
+  echo
+}
+
+xecho "deactivating current environment"
+conda deactivate
+
+if [ -d "cenv" ]; then
+  xecho "removing local environment"
+  conda remove --prefix ./cenv --all --yes
+else
+  xecho "local environment is not present, noting to remove"
+fi
+
+xecho "creating local environment from file"
+conda env create --prefix ./cenv --file cenv.yml
+
+xecho "avoiding ugly prompt"
+conda config --set env_prompt '({name}) '
+
+xecho "activating local environment"
+conda activate ./cenv
+
+xecho "locking precise versions"
+conda env export --prefix ./cenv  > cenv-lock.yml
+
+echo
+echo
+echo "Tschüss."
+echo

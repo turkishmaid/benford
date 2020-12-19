@@ -23,6 +23,11 @@ adhoc.py
 adhoc.sh
 
 
+# conda env
+/cenv/
+/cenv-lock.yml
+
+
 
 #
 #     GitHub generated .gitignore for Python projects

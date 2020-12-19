@@ -1,6 +1,9 @@
 # benford
 Fool around with digit statistics.
 
+
+&nbsp;
+
 ## trigger
 - https://core.ac.uk/download/pdf/206427437.pdf
 - via [tweet by chaoaretasty](https://twitter.com/chaoaretasty/status/1325088962587865089?s=21)
@@ -16,6 +19,9 @@ https://core.ac.uk/download/pdf/206427437.pdf
 
 (Links in tweets slightly fitted to the purpose, but keeping verbatim text.)
 
+
+&nbsp;
+
 ## pygame
 
 - (not finding my main resource now...)
@@ -23,3 +29,11 @@ https://core.ac.uk/download/pdf/206427437.pdf
 - https://pygame.readthedocs.io/en/latest/4_text/text.html -> fonts or not?
 - https://realpython.com/pygame-a-primer/
 - https://ukdevguy.com/pygame-tutorial-in-python-3/
+
+
+&nbsp;
+
+## Install
+
+Because pygame is not available from `conda`, we have to take care to not mix up `conda install` and `pip3 install`.
+- https://www.anaconda.com/blog/using-pip-in-a-conda-environment – Dec 2018
