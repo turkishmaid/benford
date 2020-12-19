@@ -13,6 +13,11 @@ from pathlib import Path
 
 
 def get_csv(path: Path) -> list:
+    """
+    Read CSV with lead column like HEADER (1), COMMENT (0..N), DATA (1..N).
+    :param path: Path of the csv-file (;-separated)
+    :return: list(dict) with keys like in HEADER row.
+    """
 
     def map_line(line: list, fields: dict) -> dict:
         d = {}

@@ -43,7 +43,7 @@ def next() -> int:
         parent = p.parent
         if parent != next._last_parent:
             next._last_parent = parent
-            print(parent)
+            # print(parent)
         s = str(p)
         # directories have 96 bytes -> systematic "fraud"
         if not p.is_file():

@@ -37,3 +37,7 @@ https://core.ac.uk/download/pdf/206427437.pdf
 
 Because pygame is not available from `conda`, we have to take care to not mix up `conda install` and `pip3 install`.
 - https://www.anaconda.com/blog/using-pip-in-a-conda-environment – Dec 2018
+- https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually
+- https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#specifying-a-location-for-an-environment
+
+Result is `cenv.yml` and `csetup` which is reusable in other projects.

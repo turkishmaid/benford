@@ -1,8 +1,11 @@
 name: benford
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - pip
   - python=3.8
+  - notebook
+  - nb_conda_kernels
   - pip:
     - pygame
